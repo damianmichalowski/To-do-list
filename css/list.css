@@ -1,0 +1,19 @@
+.list {
+    
+    list-style: none;
+    padding: 0;
+}
+
+.list__item {
+    
+}
+
+.list__button {
+    padding: 10px;
+    background-color: #00d26a;
+}
+
+.list__button--remove {
+    padding: 10px;
+    background-color: rgb(255, 107, 107);
+}

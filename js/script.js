@@ -51,13 +51,13 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li 
+            <li class="list__item"
             ${task.done ? "style=\"text-decoration: line-through\"" : ""}
             >
 
-            <button class="js-done">Zrobione ?</button>
-            <button class="js-remove">Usuń</button>
+            <button class="list__button js-done">🟩</button>
             ${task.content}
+            <button class="list__button--remove js-remove">✖️</button>
             </li>
             `
         };
@@ -75,7 +75,7 @@
         if (newTaskContent === "") {
             return;
         }
-
+        
         addNewTask(newTaskContent);
     };
 

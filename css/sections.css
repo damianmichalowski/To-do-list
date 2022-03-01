@@ -1,0 +1,21 @@
+.sections {
+    width: 75vw;
+    background-color: white;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+
+.sections__header{
+    background-color: rgb(235, 235, 235);
+    margin-bottom: 0px;
+}
+
+.subSections{
+    border-bottom: 1px solid rgb(155, 155, 155);
+    padding-left: 20px;
+    padding-top: 1px;
+}
+
+.thSections{
+    padding: 15px;
+}

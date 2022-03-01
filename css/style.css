@@ -1,0 +1,9 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
