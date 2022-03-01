@@ -1,18 +1,16 @@
 {
-
-    const tasks = [
+    tasks = [
         {
-            content: "nagrać lekcje",
+            content: "zadanie 1",
             done: false,
         },
         {
-            content: "zjeść pierogi",
+            content: "zadanie 2",
             done: true,
         },
     ];
 
     const addNewTask = (newTaskContent) => {
-
         tasks.push({
             content: newTaskContent,
         });
@@ -20,17 +18,17 @@
         render();
     };
 
-    const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+    const removeTask = (index) => {
+        tasks.splice(index, 1);
+        render ();
+    };
+
+    const toggleDoneTask = (index) => {
+        tasks[index].done = !tasks[index].done;
         render();
     };
 
-    const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
-        render();
-    };
-
-    const evenetsListeners = () => {
+    const eventListeners = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, index) => {
@@ -39,35 +37,35 @@
             });
         });
 
-        const toggleDoneButtons = document.querySelectorAll(".js-done");
+        const doneButtons = document.querySelectorAll(".js-done");
 
-        toggleDoneButtons.forEach((doneButton, index) => {
+        doneButtons.forEach((doneButton, index) => {
             doneButton.addEventListener("click", () => {
-                toggleTaskDone(index);
+                toggleDoneTask(index);
             });
         });
-    }
-    
+    };
+
     const render = () => {
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
-                <li 
-                    ${task.done ? "style=\"text-decoration: line-through\"" : ""}
-                >
-                    <button class="js-done"> Zrobione </button>
-                    <button class="js-remove"> usuń </button>
-                    ${task.content}
-                </li>
-            `;
-        }
+            <li 
+            ${task.done ? "style=\"text-decoration: line-through\"" : ""}
+            >
+
+            <button class="js-done">Zrobione ?</button>
+            <button class="js-remove">Usuń</button>
+            ${task.content}
+            </li>
+            `
+        };
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-        evenetsListeners();
+        eventListeners();
     };
-
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -88,5 +86,4 @@
     };
 
     init();
-
 }
