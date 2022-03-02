@@ -10,6 +10,8 @@ My first app used JS with HTML and CSS. This app allows adding/removing/marking 
 4. CSS
 5. CSS (Flex)
 6. BEM
-## Screenshots
+7. MediaQueries
+## Screenshots / on desktop
 ![App Screenshot](images/Bez%20tytułu2.jpg)
+## on phones
 ![App Screenshot](images/Bez%20tytułu3.jpg)
