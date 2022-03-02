@@ -10,5 +10,5 @@ My first app used JS with HTML and CSS. This app allows adding and removing task
 4. CSS
 5. BEM
 ## PIX
-![App Screenshot](images/Bez tytułu2.jpg)
-![App Screenshot](images/Bez tytułu3.jpg)
+![App Screenshot](Bez tytułu2.jpg)
+![App Screenshot](Bez tytułu3.jpg)
