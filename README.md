@@ -1,4 +1,4 @@
-# TO DO LIST
+# TO-DO LIST
 ## DEMO LINK 
 https://damianmichalowski.github.io/To-do-list/
 ## DESCRIPTION
