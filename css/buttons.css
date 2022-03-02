@@ -3,6 +3,12 @@
     width: 35px;
     height: 35px;
     background-color: rgb(116, 240, 116);
+    
+}
+
+.button__span {
+    width: 35px;
+    height: 35px;
 }
 
 .button:hover {

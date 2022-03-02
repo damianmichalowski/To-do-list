@@ -27,7 +27,11 @@
 }
 
 
-@media (max-width:768px){
+@media (max-width:450px){
+    .form__field {
+        flex-grow: 1;
+    }
+
     .form__button{
         flex-grow: 1;
     }

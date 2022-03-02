@@ -8,6 +8,7 @@
 .section__header {
     margin: 0;
     padding: 20px;
+    padding-left: 0;
 }
 
 .section__subheader {
@@ -26,7 +27,7 @@
 
 .section__listItem {
     display: flex;
-    gap:20px;
+    gap: 20px;
     padding: 10px;
     border-bottom: 1px solid darkgrey;
     margin-bottom: 10px;
@@ -36,7 +37,8 @@
     text-decoration: line-through;
 }
 
-.section__listContent{
+.section__listContent {
     flex-grow: 1;
     align-self: center;
+    
 }

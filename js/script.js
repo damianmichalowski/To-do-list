@@ -1,14 +1,5 @@
 {
-    tasks = [
-        {
-            content: "zadanie 1",
-            done: false,
-        },
-        {
-            content: "zadanie 2",
-            done: true,
-        },
-    ];
+    tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -53,9 +44,9 @@
             <li class="section__listItem ${task.done ? "section__listItem--done" : ""}"
             >
 
-            <span><button class="button js-done"></button></span>
+            <span class="button__span"><button class="button js-done">${task.done ? "✔️" : ""}</button></span>
             <span class="section__listContent">${task.content}</span>
-            <span><button class="button button--remove js-remove">🗑️</button></span>
+            <span class="button__span"><button class="button button--remove js-remove">🗑️</button></span>
             </li>
             `
         };
@@ -71,6 +62,7 @@
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
         
         if (newTaskContent === "") {
+            document.querySelector(".form__field").focus();
             return;
         }
         
