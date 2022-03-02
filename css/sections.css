@@ -1,21 +1,42 @@
-.sections {
-    width: 75vw;
-    background-color: white;
-    margin:0 auto;
+.section {
+    margin: 0 auto;
     margin-bottom: 20px;
+    max-width: 1200px;
+    width: 100%;
 }
 
-.sections__header{
-    background-color: rgb(235, 235, 235);
-    margin-bottom: 0px;
+.section__header {
+    margin: 0;
+    padding: 20px;
 }
 
-.subSections{
-    border-bottom: 1px solid rgb(155, 155, 155);
-    padding-left: 20px;
-    padding-top: 1px;
+.section__subheader {
+    padding: 20px;
+    border-bottom: 1px solid darkgrey;
+    background-color: white;
+    margin: 0;
 }
 
-.thSections{
-    padding: 15px;
+.section__list {
+    background-color: white;
+    padding: 40px;
+    margin: 0;
+    list-style: none;
+}
+
+.section__listItem {
+    display: flex;
+    gap:20px;
+    padding: 10px;
+    border-bottom: 1px solid darkgrey;
+    margin-bottom: 10px;
+}
+
+.section__listItem--done {
+    text-decoration: line-through;
+}
+
+.section__listContent{
+    flex-grow: 1;
+    align-self: center;
 }

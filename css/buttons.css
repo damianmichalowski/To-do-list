@@ -1,0 +1,26 @@
+.button {
+    border: none;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(116, 240, 116);
+}
+
+.button:hover {
+    background-color: rgb(88, 235, 88);
+}
+
+.button:active {
+    background-color: rgb(154, 255, 154);
+}
+
+.button--remove {
+    background-color: rgb(240, 73, 73);
+}
+
+.button--remove:hover.button--remove:hover {
+    background-color: rgb(235, 57, 57);
+}
+
+.button--remove:active.button--remove:active {
+    background-color: rgb(231, 156, 156);
+}

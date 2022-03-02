@@ -14,7 +14,6 @@
         tasks.push({
             content: newTaskContent,
         });
-
         render();
     };
 
@@ -51,13 +50,12 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li class="list__item"
-            ${task.done ? "style=\"text-decoration: line-through\"" : ""}
+            <li class="section__listItem ${task.done ? "section__listItem--done" : ""}"
             >
 
-            <button class="list__button js-done">🟩</button>
-            ${task.content}
-            <button class="list__button--remove js-remove">✖️</button>
+            <span><button class="button js-done"></button></span>
+            <span class="section__listContent">${task.content}</span>
+            <span><button class="button button--remove js-remove">🗑️</button></span>
             </li>
             `
         };
@@ -69,14 +67,15 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-
+        
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
-
+        
         if (newTaskContent === "") {
             return;
         }
         
         addNewTask(newTaskContent);
+        document.querySelector(".js-newTask").value = "";
     };
 
     const init = () => {
