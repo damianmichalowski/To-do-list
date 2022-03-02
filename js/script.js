@@ -44,9 +44,9 @@
             <li class="section__listItem ${task.done ? "section__listItem--done" : ""}"
             >
 
-            <span class="button__span"><button class="button js-done">${task.done ? "✔️" : ""}</button></span>
-            <span class="section__listContent">${task.content}</span>
-            <span class="button__span"><button class="button button--remove js-remove">🗑️</button></span>
+            <div class="button__div"><button class="button js-done">${task.done ? "✔️" : ""}</button></div>
+            <div class="section__listContent">${task.content}</div>
+            <div class="button__div"><button class="button button--remove js-remove">🗑️</button></div>
             </li>
             `
         };
