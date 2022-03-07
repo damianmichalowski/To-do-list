@@ -2,7 +2,7 @@
     background-color: white;
     list-style: none;
     text-decoration: none;
-    padding:30px;
+    padding: 30px;
     padding-top: 0;
     margin: 0;
 }
@@ -32,9 +32,24 @@
     margin: 0;
     height: 32px;
     width: 32px;
-    background-color: rgba(31, 143, 23, 0.781);
+    background-color: hsla(116, 72%, 33%, 0.781);
+    transition: 0.5s;
 }
 
-.list__button--remove {
-    background-color:rgb(235 50 50);
+.list__button:hover {
+    background-color: hsla(116, 72%, 38%, 0.781);
+}
+
+.list__buttonRemove {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    background-color: hsl(0, 82%, 56%);
+    transition: 1s;
+}
+
+.list__buttonRemove:hover {
+    background-color:hsl(0, 82%, 45%);
 }
