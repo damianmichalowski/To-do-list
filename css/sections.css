@@ -6,45 +6,9 @@
     box-shadow: 0px 0px 8px rgb(204, 204, 204);
 }
 
-.section--header {
-    box-shadow: 0px 0px 0px rgb(204, 204, 204);
-    margin-bottom: 0;
-}
-
 .section__header {
-    margin: 0;
-    padding: 20px;
-    padding-left: 0;
-}
-
-.section__subheader {
     padding: 20px;
     border-bottom: 1px solid darkgrey;
     background-color: white;
     margin: 0;
-}
-
-.section__list {
-    background-color: white;
-    padding: 40px;
-    margin: 0;
-    list-style: none;
-}
-
-.section__listItem {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-    border-bottom: 1px solid darkgrey;
-    margin-bottom: 10px;
-}
-
-.section__listItem--done {
-    text-decoration: line-through;
-}
-
-.section__listContent {
-    flex-grow: 1;
-    align-self: center;
-
 }

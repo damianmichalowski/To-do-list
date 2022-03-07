@@ -6,6 +6,7 @@
             content: newTaskContent,
         });
         render();
+        document.querySelector(".form__field").focus();
     };
 
     const removeTask = (index) => {
@@ -41,17 +42,15 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li class="section__listItem ${task.done ? "section__listItem--done" : ""}"
-            >
-
-            <div class="button__div"><button class="button js-done">${task.done ? "✔️" : ""}</button></div>
-            <div class="section__listContent">${task.content}</div>
-            <div class="button__div"><button class="button button--remove js-remove">🗑️</button></div>
+            <li class="list__item">
+            <button class="list__button js-done">${task.done ? "✔️" : ""}</button>
+            <p class="list__itemContent ${task.done ? "list__itemContent--done" : ""}">${task.content}</p>
+            <button class="list__button list__button--remove js-remove">🗑️</button>
             </li>
             `
         };
 
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+        document.querySelector(".js-list").innerHTML = htmlString;
 
         eventListeners();
     };

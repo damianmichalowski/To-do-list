@@ -20,24 +20,26 @@
     <link href="css/sections.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/buttons.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet">
 </head>
 
 <body class="body">
-    <section class="section section--header">
-        <h1 class="section__header"> Lista zadań</h1>
-    </section>
+    <header class="section header">
+        <h1> Lista zadań </h1>
+    </header>
 
     <section class="section">
-        <h2 class="section__subheader">Dodaj nowe zadanie</h2>
+        <h2 class="section__header">Dodaj nowe zadanie</h2>
         <form class="form js-form">
-            <input class="form__field js-newTask" placeholder="Co jest do zrobienia?" autofocus >
+            <input class="form__field js-newTask" placeholder="Co jest do zrobienia?" autofocus>
             <button class="form__button">Dodaj zadanie</button>
         </form>
     </section>
 
     <section class="section">
-        <h2 class="section__subheader">Lista zadań</h2>
-        <ul class="section__list js-tasks"></ul>
+        <h2 class="section__header">Lista zadań</h2>
+        <ul class="list js-list"></ul>
     </section>
 </body>
 

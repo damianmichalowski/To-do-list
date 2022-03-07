@@ -1,0 +1,40 @@
+.list {
+    background-color: white;
+    list-style: none;
+    text-decoration: none;
+    padding:30px;
+    padding-top: 0;
+    margin: 0;
+}
+
+.list__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+    padding-top: 30px;
+    border-bottom: 1px solid grey;
+}
+
+.list__itemContent {
+    margin: 0;
+    align-self: center;
+}
+
+.list__itemContent--done {
+    text-decoration: line-through;
+}
+
+.list__button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    background-color: rgba(31, 143, 23, 0.781);
+}
+
+.list__button--remove {
+    background-color:rgb(235 50 50);
+}
