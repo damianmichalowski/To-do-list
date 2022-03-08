@@ -1,18 +1,25 @@
 {
-    const tasks = [];
-    
+    let tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
+
         render();
+        
         document.querySelector(".js-newTask").focus();
     };
 
     const removeTask = (index) => {
-        tasks.splice(index, 1);
-        render ();
+
+        tasks = [
+            ...tasks.slice(0, index),
+            ...tasks.slice(index + 1),
+        ];
+
+        render();
     };
 
     const toggleDoneTask = (index) => {
@@ -58,14 +65,14 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        
+
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
-        
+
         if (newTaskContent === "") {
             document.querySelector(".js-newTask").focus();
             return;
         }
-        
+
         addNewTask(newTaskContent);
         document.querySelector(".js-newTask").value = "";
     };
