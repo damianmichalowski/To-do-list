@@ -1,10 +1,8 @@
 .list {
-    background-color: white;
     list-style: none;
     text-decoration: none;
-    padding: 30px;
-    padding-top: 0;
     margin: 0;
+    padding: 0;
 }
 
 .list__item {
@@ -12,8 +10,7 @@
     grid-template-columns: auto 1fr auto;
     grid-gap: 20px;
     align-items: center;
-    padding: 20px 0;
-    padding-top: 30px;
+    padding: 10px;
     border-bottom: 1px solid grey;
 }
 
@@ -30,24 +27,24 @@
     border: 0;
     padding: 0;
     margin: 0;
-    height: 32px;
-    width: 32px;
+    height: 30px;
+    width: 30px;
     color:white;
     transition: background-color 0.3s;
 }
 
 .list__buttonDone {
-    background-color: hsla(116, 72%, 33%, 0.781);
+    background-color: hsl(116deg 72% 27%);
 }
 
 .list__buttonDone:hover {
-    background-color: hsla(116, 75%, 41%, 0.781);
+    background-color: hsl(116deg 72% 37%);
 }
 
 .list__buttonRemove {
-    background-color: hsl(0, 82%, 56%);
+    background-color:hsl(0deg 79% 44%);
 }
 
 .list__buttonRemove:hover {
-    background-color:hsl(0, 82%, 45%);
+    background-color:hsl(0deg 79% 55%);
 }

@@ -1,25 +1,26 @@
 .form {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    background-color: white;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
 }
 
-.form__field {
-    flex-grow: 1;
+.form__input {
     padding: 10px;
+    border: 1px solid lightgray;
 }
 
 .form__button {
+    font-weight: 300;
     padding: 10px;
     border: none;
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     color: white;
+    transition: 0.3s;
 }
 
 .form__button:hover {
     background-color: hsl(180, 100%, 30%);
+    transform: scale(1.1);
 }
 
 .form__button:active {
@@ -27,22 +28,8 @@
 }
 
 
-@media (max-width:756px) {
+@media (max-width:767px) {
     .form {
-        flex-direction: column;
-    }
-}
-
-@media (min-width:756px) {
-    .form__button {
-        transition: 1s, transform 0.3s;
-    }
-
-    .form__button:hover {
-        transform: scale(1.1);
-    }
-
-    .form__button:active {
-        background-color: hsl(180, 100%, 35%);
+        grid-template-columns: 1fr;
     }
 }

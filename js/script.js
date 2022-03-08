@@ -1,12 +1,13 @@
 {
     const tasks = [];
+    
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
         });
         render();
-        document.querySelector(".form__field").focus();
+        document.querySelector(".js-newTask").focus();
     };
 
     const removeTask = (index) => {
@@ -61,7 +62,7 @@
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
         
         if (newTaskContent === "") {
-            document.querySelector(".form__field").focus();
+            document.querySelector(".js-newTask").focus();
             return;
         }
         
