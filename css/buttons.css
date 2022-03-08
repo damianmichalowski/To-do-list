@@ -1,6 +1,30 @@
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .buttons__button {
-    color: teal;
+    margin-left: 20px;
     border: none;
     background-color: transparent;
-    margin-left: 10px;
+    color: teal;
+    transition: color 0.3s;
+}
+
+.buttons__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.buttons__button:disabled {
+    color: lightgrey;
+}
+
+@media (max-width: 767px) {
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons__button {
+        margin: 10px 0;
+    }
 }

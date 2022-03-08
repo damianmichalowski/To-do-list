@@ -9,6 +9,7 @@
 .section__header {
     display: grid;
     grid-template-columns: auto auto;
+    grid-gap: 10px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid darkgrey;
@@ -26,3 +27,10 @@
     padding: 20px;
 }
 
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+}
