@@ -20,7 +20,7 @@
 }
 
 .buttons__button:disabled {
-    color: lightgrey;
+    color: rgb(179, 179, 179);
 }
 
 @media (max-width: 767px) {
