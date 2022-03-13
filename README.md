@@ -2,7 +2,7 @@
 ## DEMO LINK 
 https://damianmichalowski.github.io/To-do-list/
 ## DESCRIPTION
-My first app used JS with HTML and CSS. This app allows adding/removing/marking daily tasks on your to-do list. To-do list is a responsive app you can use on whatever you want.
+My first app used JS with HTML and CSS. This app allows adding/removing/marking daily tasks on your to-do list. To-do list is a responsive app you can use on any device you want.
 ## Technology used
 1. Javascript
 2. Javascript ES6+ Features (Arrow Functions)
@@ -15,5 +15,5 @@ My first app used JS with HTML and CSS. This app allows adding/removing/marking 
 ## Screenshots
 ### on desktop
 ![App Screenshot](images/screen1.jpg)
-### on phones
+### on mobile devices
 ![App Screenshot](images/screen2.jpg)
